@@ -6,6 +6,67 @@ body {
   height: 100%;
 }
 
+/* ======
+  GROUP
+=========*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text {
+  padding-top: 17.5%;
+  padding-left: 25vw;
+  float: left;
+  width: 60%;
+}
+
+.prof-pic {
+  padding-top: 10%;
+  float: right;
+  width: 40%;
+}
+@media (max-width: 625px) {
+  .text, .prof-pic {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* ================================
+  Newsletter
+===================================*/
+.newsletter-container {
+  max-width: 200px;
+  border-radius: 1em;
+  flex-direction: column;
+  padding: 0em 0;
+  margin-bottom: 1em;
+}
+
+
+
+.newsletter-submit {
+  font-family: "Roboto Slab", serif;
+}
+
+
+/*========================
+  Navigation Menu
+========================*/
+
+nav a {
+    text-decoration: none;
+}
+nav li.active a {
+    background-color: #ffab40;
+}
+
+#navigation #navbar .navbar-nav .active a {
+    color: #ffffff !important;
+    border-bottom: 2px solid #ffffff !important;
+}
 
 /* ============================================================
   SECTIONS
@@ -70,6 +131,30 @@ section.module.parallax-1 {
   #abtdescription {
   padding-left: 2.5vw;
   padding-right: 2.5vw;
+  }
+}
+
+#hmdescription {
+  font-family: "Roboto Slab", serif;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+#blogtitle {
+  font-family: "Roboto Slab", serif;
+  color: #ffab40;
+}
+
+#blogdescr {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  #hmdescription {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
   }
 }
 

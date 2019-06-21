@@ -4,14 +4,12 @@ twitter: bruinanalytics
 
 permalink: "/:title"
 
-paginate: 2
-paginate_path: "blog/:num"
+paginate: 10
+paginate_path: "/page:num"
 
 plugins:
   - jekyll-paginate
 
-alex_veroulis:
-  name: Alex Veroulis
-  web: http://www.bruinsportsanalytics.com
+
 
 excerpt_separator: <!-- end excerpt here -->

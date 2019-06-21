@@ -1,70 +1,198 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <title>Bruin Sports Analytics</title>
     <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
-    <link rel="stylesheet" href="/css/materialize.min.css">    
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab"> 
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
-    <link rel="stylesheet" href="/css/posts.css" type="text/css"> 
-    <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="../../assets/logo1.png">
-    
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
   </head>
+  
   <header>
-    <!-- <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle></button>
-    <div class="title-bar-title">Menu</div>
-    </div> -->
-      <div class="navbar-fixed">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
         <nav>
+          <div class="container-fluid">
           <div class="nav-wrapper">
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <div class="leftbox">
-            <a href="http://www.bruinsportsanalytics.com" class="left navlink">
+            <a href="../../" class="left navlink">
               <img id="logo" src="../../assets/logo1.png" /> 
-              <span id="homemenuitem">
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
               Bruin Sports Analytics
             </span>
             </a>
           </div>
-            <ul id="days" class="right hide-on-med-and-down">
-              <li id="Blog"><a class="navlink" href="../../blog">Blog</a></li>
-              <li id="Research"><a class="navlink" href="../../research">Research</a></li>
-              <li id="Officers"><a class="navlink" href="../../officers">Officers/Members</a></li>
-            </ul>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
 
-            <ul class="side-nav" id="mobile-demo">
-              <li id="Blog"><a class="navlink" href="../blog">Blog</a></li>
-              <li id="Research"><a class="navlink" href="../../research">Research</a></li>
-              <li id="Officers"><a class="navlink" href="../../officers">Officers/Members</a></li>
-            </ul>
-          </div>
-        </nav>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
       </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
 
 </header>
 
 <script>
-  $(document).ready(function(){
-  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-  $('.modal').modal();
-  $(".button-collapse").sideNav();
-});
-        
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
 </script>
-
   <body>
     <div id="bodycontent">
 
             <h2 id = "pagetitle">An Analysis of Pro Prospects in Bowl Games</h2>
-            <p>By: Alex Veroulis | 09 Jan 2018</p>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                      
+                    
+                  
+                  • 09 Jan 2018 •
+                  
+                    
+                      12 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
             <figure>
     <center><img style="max-width: 95%"; src ="/assets/proprospects2018/banner.png" alt="Pro Bowl Prospects"></center>
     <figcaption>Pro prospects nationwide.</figcaption>
@@ -77,7 +205,7 @@
     <figcaption></figcaption>
 </figure>
 <p>
-    To begin, the top quarterback prospect to have played in a bowl game was Sam Darnold of USC. Darnold was unable to perform at the level that he has displayed in the past, as his team was demolished by a ferocious Ohio State defense. The USC offense was only able to muster a measly 7 points in the game, and the touchdown the Trojans did get wasn’t even accounted for by Darnold. The USC star threw for 356 yards with no touchdowns and an interception, which gave him an abysmal 35.0 QBR (quarterback rating), a little more than half of the 68.9 QBR he averaged during the season. Plus, he struggled with being comfortable in the pocket, as he was sacked for a season high 8 times by the Ohio State defense. This performance was exactly the opposite of what he did in the Rose Bowl last year, where he directed a masterful comeback against Penn State. Perhaps this year Darnold was rattled by distractions from scouts and NFL teams, as he declared for the draft shortly after the loss to Ohio State. 
+    To begin, the top quarterback prospect to have played in a bowl game was Sam Darnold of USC. Darnold was unable to perform at the level that he has displayed in the past, as his team was demolished by a ferocious Ohio State defense. The USC offense was only able to muster a measly 7 points in the game, and the touchdown the Trojans did get wasn’t even accounted for by Darnold. The USC star threw for 356 yards with no touchdowns and an interception, which gave him an abysmal 35.0 QBR (quarterback rating), a little more than half of the 68.9 QBR he averaged during the season. Plus, he struggled with being comfortable in the pocket, as he was sacked for a season high 8 times by the Ohio State defense. This performance was exactly the opposite of what he did in the Rose Bowl last year, where he directed a masterful comeback against Penn State. Perhaps this year Darnold was rattled by distractions from scouts and NFL teams, as he declared for the draft shortly after the loss to Ohio State.
 </p>
 <figure>
     <center><img class="materialboxed" src ="/assets/proprospects2018/allen.png" alt="Josh Allen"></center>
@@ -85,21 +213,21 @@
 </figure>
 
 <p>
-    The next prospect to have played in a bowl was Josh Allen of Wyoming, who shined in his post-season action against Central Michigan. Allen led an explosive Cowboys offense to a 37-14 win, as the quarterback threw for an amazing 3 touchdowns on only 11 completions and 19 total attempts passing for a QBR of 79.2. In addition, Allen had a nice 7-yard run that showed off his improvisational skills. His ability to create plays, arm strength, and impeccable size have impressed scouts, who think he is similar to another small-school quarterback, Ben Roethlisberger. His play in this bowl game should improve his draft stock, as it should make up for his struggles in the regular season, where he had a pedestrian 56.2 QBR and had to adjust to a depleted Wyoming roster. Five players, including star running back Brian Hill, were lost to the NFL, so Allen had less weapons on offense than last year. This explains why he threw for 12 fewer touchdowns and over 1,000 fewer yards than last season. However, his most recent performance should make him a top-10 draft pick. 
+    The next prospect to have played in a bowl was Josh Allen of Wyoming, who shined in his post-season action against Central Michigan. Allen led an explosive Cowboys offense to a 37-14 win, as the quarterback threw for an amazing 3 touchdowns on only 11 completions and 19 total attempts passing for a QBR of 79.2. In addition, Allen had a nice 7-yard run that showed off his improvisational skills. His ability to create plays, arm strength, and impeccable size have impressed scouts, who think he is similar to another small-school quarterback, Ben Roethlisberger. His play in this bowl game should improve his draft stock, as it should make up for his struggles in the regular season, where he had a pedestrian 56.2 QBR and had to adjust to a depleted Wyoming roster. Five players, including star running back Brian Hill, were lost to the NFL, so Allen had less weapons on offense than last year. This explains why he threw for 12 fewer touchdowns and over 1,000 fewer yards than last season. However, his most recent performance should make him a top-10 draft pick.
 </p>
 <figure>
     <center><img class="materialboxed" src ="/assets/proprospects2018/jackson.png" alt="Lamar Jackson"></center>
     <figcaption></figcaption>
 </figure>
 <p>
-    Perhaps one of the most electrifying players in all of college football is Lamar Jackson of Louisville, last year’s Heisman Trophy winner. The dual threat quarterback put up similar numbers offensively in comparison to last year, as he had 28 passing touchdowns and 18 rushing touchdowns in 2017, while he had 30 passing touchdowns and 21 rushing touchdowns in 2016. However, Jackson’s play dropped off in the bowl game against Mississippi State. In a losing effort, Jackson only led his offense to 6 second-half points, which contributed to their losing effort. Although Jackson thrived on the ground with 158 rushing yards for one touchdown, it was through the air where he struggled mightily. After all, he threw for a mere 171 yards with only 13 completions and a 41.9% completion percentage, which yielded a 47.4 QBR. Even worse, he threw 4 interceptions, and one was when Louisville was driving to take the lead late in the fourth quarter. This performance should bring up questions about Jackson’s decision making skills when throwing the ball, which could hurt his draft stock and make him a mid-round pick. 
+    Perhaps one of the most electrifying players in all of college football is Lamar Jackson of Louisville, last year’s Heisman Trophy winner. The dual threat quarterback put up similar numbers offensively in comparison to last year, as he had 28 passing touchdowns and 18 rushing touchdowns in 2017, while he had 30 passing touchdowns and 21 rushing touchdowns in 2016. However, Jackson’s play dropped off in the bowl game against Mississippi State. In a losing effort, Jackson only led his offense to 6 second-half points, which contributed to their losing effort. Although Jackson thrived on the ground with 158 rushing yards for one touchdown, it was through the air where he struggled mightily. After all, he threw for a mere 171 yards with only 13 completions and a 41.9% completion percentage, which yielded a 47.4 QBR. Even worse, he threw 4 interceptions, and one was when Louisville was driving to take the lead late in the fourth quarter. This performance should bring up questions about Jackson’s decision making skills when throwing the ball, which could hurt his draft stock and make him a mid-round pick.
 </p>
 <figure>
 <center><img class="materialboxed" src ="/assets/proprospects2018/mayfield.png" alt="Baker Mayfield"></center>
 <figcaption></figcaption>
 </figure>
 <p>
-    Next up is this year’s Heisman winner, Baker Mayfield of Oklahoma. A former walk-on, Mayfield has elevated his level of play dramatically over the past three years, as he has led Oklahoma’s prolific offense in the pass happy Big 12 Conference. This year, Mayfield’s numbers were insane, as he threw for 43 total touchdowns against just 6 interceptions, which gave him a stellar 89.7 QBR on the season. Unfortunately, this level of play did not translate to the national semifinal game against Georgia, where his team lost in double overtime 54-48. Mayfield’s offense started out strong, as the team scored on its first four possessions against the talented Georgia defense. But Mayfield could only orchestrate one touchdown drive throughout the second half and both over-times, which allowed Georgia to climb out of a 17-point first half deficit. Georgia’s halftime adjustments on defense seemed to stymie Mayfield and the Sooners, which isn’t a good sign for Mayfield since he will be facing much tougher defenses at the next level. Mayfield ended the game with a 64.0 QBR, his worst rating in a game all season. Nevertheless, looking at his whole body of work this season, he deserves to be a first-round pick. 
+    Next up is this year’s Heisman winner, Baker Mayfield of Oklahoma. A former walk-on, Mayfield has elevated his level of play dramatically over the past three years, as he has led Oklahoma’s prolific offense in the pass happy Big 12 Conference. This year, Mayfield’s numbers were insane, as he threw for 43 total touchdowns against just 6 interceptions, which gave him a stellar 89.7 QBR on the season. Unfortunately, this level of play did not translate to the national semifinal game against Georgia, where his team lost in double overtime 54-48. Mayfield’s offense started out strong, as the team scored on its first four possessions against the talented Georgia defense. But Mayfield could only orchestrate one touchdown drive throughout the second half and both over-times, which allowed Georgia to climb out of a 17-point first half deficit. Georgia’s halftime adjustments on defense seemed to stymie Mayfield and the Sooners, which isn’t a good sign for Mayfield since he will be facing much tougher defenses at the next level. Mayfield ended the game with a 64.0 QBR, his worst rating in a game all season. Nevertheless, looking at his whole body of work this season, he deserves to be a first-round pick.
 </p>
 <figure>
     <center><img class="materialboxed" src ="/assets/proprospects2018/lock.png" alt="Drew Lock"></center>
@@ -114,7 +242,7 @@
 </figure>
 
 <p>
-    Furthermore, Mason Rudolph of Oklahoma State was one of the few quarterback prospects who met expectations in the postseason. A consistent performer throughout the regular season, Rudolph threw for an impeccable 4904 yards with 37 passing touchdowns to 9 interceptions to give him a respectable 83.8 QBR for the season. His main connection was with star receiver James Washington, who had over 1000 receiving yards this year. Rudolph has impressive size at 6 foot 5 and 230 pounds, and his leadership skills have been highly touted by scouts. This is probably why he was motivated to get his school and teammates a win in the bowl game against Virginia Tech. Rudolph impressed with 351 passing yards, 2 touchdowns, and no interceptions against a stingy Virginia Tech defense that ranked 5th in the nation with 13.5 points allowed per game. This kind of play could translate well to the NFL, where Rudolph will have to face even tougher defenses while con-tinuing to make good decisions. In addition to his skills on the field, his intangibles could earn him a spot in the first few rounds of the draft. 
+    Furthermore, Mason Rudolph of Oklahoma State was one of the few quarterback prospects who met expectations in the postseason. A consistent performer throughout the regular season, Rudolph threw for an impeccable 4904 yards with 37 passing touchdowns to 9 interceptions to give him a respectable 83.8 QBR for the season. His main connection was with star receiver James Washington, who had over 1000 receiving yards this year. Rudolph has impressive size at 6 foot 5 and 230 pounds, and his leadership skills have been highly touted by scouts. This is probably why he was motivated to get his school and teammates a win in the bowl game against Virginia Tech. Rudolph impressed with 351 passing yards, 2 touchdowns, and no interceptions against a stingy Virginia Tech defense that ranked 5th in the nation with 13.5 points allowed per game. This kind of play could translate well to the NFL, where Rudolph will have to face even tougher defenses while con-tinuing to make good decisions. In addition to his skills on the field, his intangibles could earn him a spot in the first few rounds of the draft.
 </p>
 <figure>
     <center><img class="materialboxed" src ="/assets/proprospects2018/stidham.png" alt="Jarrett Stidham"></center>
@@ -144,17 +272,42 @@
     <figcaption></figcaption>
 </figure>
 <p>
-    The last quarterback prospect to be analyzed is Mike White of Western Kentucky, who thrived during the regular season under a pass happy offense. Specifically, White has thrown for 63 touchdowns over the past two years, and he has over 4000 pass yards each of the past two years. At one point this season, White had a tremendous stretch where he threw for 5 touchdowns in consecutive games against in conference foes Charlotte and Old Dominion. However, White and his team lost 5 of their final six games, including their bowl game against Georgia State. The standout quarterback performed poorly in the postseason, where he led his team to just 17 offensive points against an average Georgia State defense that was ranked 55th in the nation with 25.5 points allowed per game. White threw a costly interception late in the fourth quarter that ended the game, and his 31.9 QBR was his second worst rating of all games this season. Scouts must be wondering what version of White will show up in the NFL; his 6 foot 4 inch frame projects well to the next level, but his lack of athleticism and throwing strength are concerns. White should be a late-round pick if he is drafted at all. 
+    The last quarterback prospect to be analyzed is Mike White of Western Kentucky, who thrived during the regular season under a pass happy offense. Specifically, White has thrown for 63 touchdowns over the past two years, and he has over 4000 pass yards each of the past two years. At one point this season, White had a tremendous stretch where he threw for 5 touchdowns in consecutive games against in conference foes Charlotte and Old Dominion. However, White and his team lost 5 of their final six games, including their bowl game against Georgia State. The standout quarterback performed poorly in the postseason, where he led his team to just 17 offensive points against an average Georgia State defense that was ranked 55th in the nation with 25.5 points allowed per game. White threw a costly interception late in the fourth quarter that ended the game, and his 31.9 QBR was his second worst rating of all games this season. Scouts must be wondering what version of White will show up in the NFL; his 6 foot 4 inch frame projects well to the next level, but his lack of athleticism and throwing strength are concerns. White should be a late-round pick if he is drafted at all.
 </p>
 <p>
-    Through an analysis of the top ten NFL quarterback prospects who played in bowl games, it is clear that these players did not live up to expectations in postseason play. Overall, these quarterbacks combined for a 2-8 record in bowl season, which shows that they were probably more focused on the NFL than anything else. The only two winners were Josh Allen and Mason Rudolph, the only quarterbacks in the top ten who surpassed their regular season QBRs in postseason play. Also, the average QBR of 48.3 for the top ten quarterbacks in bowl games was significantly lower than their average QBR for the season as a whole, which was 69.0. Although these players are supremely talented, these prospects clearly have other things on their minds that might be hindering their play. Whether they are thinking of avoiding injury or if they simply don’t care about the game’s result, the numbers support the idea that these players didn’t show the same level of commitment as they did in the regular season. 
+    Through an analysis of the top ten NFL quarterback prospects who played in bowl games, it is clear that these players did not live up to expectations in postseason play. Overall, these quarterbacks combined for a 2-8 record in bowl season, which shows that they were probably more focused on the NFL than anything else. The only two winners were Josh Allen and Mason Rudolph, the only quarterbacks in the top ten who surpassed their regular season QBRs in postseason play. Also, the average QBR of 48.3 for the top ten quarterbacks in bowl games was significantly lower than their average QBR for the season as a whole, which was 69.0. Although these players are supremely talented, these prospects clearly have other things on their minds that might be hindering their play. Whether they are thinking of avoiding injury or if they simply don’t care about the game’s result, the numbers support the idea that these players didn’t show the same level of commitment as they did in the regular season.
 </p>
 
 
       <hr>
     </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
       <center id="footer">
-      © 2018 Bruin Sports Analytics.
+      © 2019 Bruin Sports Analytics.
       <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
 
       <!-- add icons here -->

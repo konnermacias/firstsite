@@ -5,13 +5,14 @@
         padding-right: 20vw;
     }   
     .excerptpics {
-        max-width: 95%;
+        max-width: 100%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .excerptpics {
         max-width: 95%;
+        left: 50px;
     }
 }
 
